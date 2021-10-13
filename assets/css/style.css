@@ -8,6 +8,7 @@
     --main-txt-color: ;
     --secondary-text-color: ;
     --main-padding: ;
+    --main-font-size: 20px;
 }
 
 @font-face {
@@ -22,5 +23,92 @@ body{
     font-size: 15px;
     line-height: 1.4;
     font-family: rubik;
+}
+
+.index-element-container{
+    width: 85%;
+    margin: auto;
+}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 2px 2px 4px 2px rgb(214, 210, 210);
+}
+
+header .header-brand{
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    padding: 25px 10px;
+    text-decoration: none;
+}
+
+header nav  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px 200px;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 16px;
+    list-style: none;
+}
+
+header nav ul li a {
+    line-height: 60px;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-nav-icon-container{
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+#icon-link{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    line-height: 60px;
+    padding: 16px 0px;
+}
+
+#icon-link > a i{
+    padding: 0px 6px;
+    font-size: var(--main-font-size);
+}
+
+#icon-link a:nth-child(1){
+    color: blue;
+}
+
+#icon-link a:nth-child(2){
+    color: rgb(4, 158, 4);
+}
+
+#icon-link a:nth-child(3){
+    color: rgb(1, 1, 146);
+}
+
+#icon-link a:nth-child(4){
+    color: black;
+}
+
+#icon-link a:nth-child(5){
+    color: red;
 }
 
