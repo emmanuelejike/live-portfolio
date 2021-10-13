@@ -155,6 +155,12 @@ header nav ul li a:hover{
     text-shadow: 2px 2px 8px #111;
 }
 
+
+main{
+    background: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+
 /* h1 styling */
 h1{
     text-align: center;
@@ -164,15 +170,13 @@ h1{
 /* about section */
 
 .about-section{
-    width: 80%;
-    margin: auto;
+    width: 100%;
     padding: 20px 0px;
-    background: var();
+    background: var(--secondary-bg-color);
 }
 
 .index-about-section{
-    background: var();
-    margin: 10px;
+    background: var(--secondary-bg-color);
 }
 
 .about-section-description-text-xl{
@@ -219,4 +223,111 @@ h1{
     width: 500px;
     height: 500px;
 
+}
+
+
+/* SERVICE CONTENT */
+
+
+.index-service-items{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px;padding: 10PX;
+}
+
+.index-service-items > div{
+    padding: 40px;
+    margin-top: 20px;
+    border: 1px solid white;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: box-shadow .25s ease-in, left .25s ease-in, top .25s ease-in, right .25s ease-in;
+    -webkit-transition: box-shadow .25s ease-in, left .25s ease-in, top .25s ease-in, right .25s ease-in;
+    -moz-transition: box-shadow .25s ease-in, left .25s ease-in, top .25s ease-in, right .25s ease-in;
+    -ms-transition: box-shadow .25s ease-in, left .25s ease-in, top .25s ease-in, right .25s ease-in;
+    -o-transition: box-shadow .25s ease-in, left .25s ease-in, top .25s ease-in, right .25s ease-in;
+    z-index: 500;
+    text-align: center;
+}
+
+.index-service-items > div:hover{
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    box-shadow: 2px 3px 8px 2px white;
+}
+
+.index-service-items > div:hover i{
+    background-color: gray;
+}
+
+.index-service-sub-items{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.index-service-sub-items > div{
+    padding: 20px 0px;
+    width: 200px;
+    height: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: box-shadow .25s ease-in, left .25s ease-in, top .25s ease-in, right .25s ease-in;
+    -webkit-transition: box-shadow .25s ease-in, left .25s ease-in, top .25s ease-in, right .25s ease-in;
+    -moz-transition: box-shadow .25s ease-in, left .25s ease-in, top .25s ease-in, right .25s ease-in;
+    -ms-transition: box-shadow .25s ease-in, left .25s ease-in, top .25s ease-in, right .25s ease-in;
+    -o-transition: box-shadow .25s ease-in, left .25s ease-in, top .25s ease-in, right .25s ease-in;
+    z-index: 500;
+}
+
+.index-service-sub-items > div:hover{
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    box-shadow: 2px 2px 6px 2px white;
+}
+
+i{
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 10px;
+    transition: background .25s ease-in;
+    -webkit-transition: background .25s ease-in;
+    -moz-transition: background .25s ease-in;
+    -ms-transition: background .25s ease-in;
+    -o-transition: background .25s ease-in;
+}
+
+
+.index-service-sub-items > div:hover i{
+    background-color: gray;
+}
+
+.index-service-items i{
+    color: var(--secondary-text-color);
+}
+
+.index-service-items > div:nth-child(2) i{
+    background: var(--secondary-text-color);
+    color: var(--main-txt-color);
+}
+
+.index-service-sub-items h4{
+    color: var(--secondary-text-color);
+    font-size: var(--main-font-size);
 }
