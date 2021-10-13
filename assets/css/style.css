@@ -3,10 +3,10 @@
 }
 
 :root{
-    --main-bg-color: ;
-    --secondary-bg-color: ;
-    --main-txt-color: ;
-    --secondary-text-color: ;
+    --main-bg-color: rgba(7, 7, 24, 0.815);
+    --secondary-bg-color: rgba(29, 29, 51, 0.781);
+    --main-txt-color: white;
+    --secondary-text-color: rgb(221, 155, 33);
     --main-padding: ;
     --main-font-size: 20px;
 }
@@ -23,6 +23,7 @@ body{
     font-size: 15px;
     line-height: 1.4;
     font-family: rubik;
+    color: var();
 }
 
 header{
@@ -154,4 +155,68 @@ header nav ul li a:hover{
     text-shadow: 2px 2px 8px #111;
 }
 
+/* h1 styling */
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
 
+/* about section */
+
+.about-section{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+    background: var();
+}
+
+.index-about-section{
+    background: var();
+    margin: 10px;
+}
+
+.about-section-description-text-xl{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.about-section-description-text-xl-sub-text{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+
+.about-section-description-text-xl-sub-section-text{
+    margin-top: 20px;
+}
+
+.about-section-description-text-xl-sub-text button{
+    background: var(--secondary-text-color);
+    color: var(--main-txt-color);
+    padding: 10px 10px;
+    border: none;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: background .9s ease-in;
+    -webkit-transition: background .9s ease-in;
+    -moz-transition: background .9s ease-in;
+    -ms-transition: background .9s ease-in;
+    -o-transition: background .9s ease-in;
+}
+
+.about-section-description-text-xl-sub-text button:hover{
+    background: gray;
+}
+
+.img-img{
+    width: 500px;
+    height: 500px;
+
+}
