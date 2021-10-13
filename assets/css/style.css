@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg-color: ;
+    --secondary-bg-color: ;
+    --main-txt-color: ;
+    --secondary-text-color: ;
+    --main-padding: ;
+}
+
+@font-face {
+    font-family: rubik;
+    src: url(../fonts/Rubik/static/Rubik-Regular.ttf);
+}
+
+html,
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: rubik;
+}
+
