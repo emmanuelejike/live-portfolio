@@ -7,6 +7,7 @@
     --secondary-bg-color: rgba(29, 29, 51, 0.781);
     --main-txt-color: white;
     --secondary-text-color: rgb(221, 155, 33);
+    --skill-color: rgba(2, 2, 10, 0.815);
     --main-padding: ;
     --main-font-size: 20px;
 }
@@ -23,7 +24,7 @@ body{
     font-size: 15px;
     line-height: 1.4;
     font-family: rubik;
-    color: var();
+    color: var(--main-txt-color);
 }
 
 header{
@@ -330,4 +331,50 @@ i{
 .index-service-sub-items h4{
     color: var(--secondary-text-color);
     font-size: var(--main-font-size);
+}
+
+/* skill content page */
+
+.index-skill-content-container{
+    background: var(--secondary-bg-color);
+    padding: 20px;
+}
+
+
+.container{
+    width: 500px;
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.design{
+    background: rgba(151, 151, 151, 0.712);
+    width: 100%;
+}
+
+.html{
+    width: 80%;
+    padding: 6px 0px;
+    background: var(--skill-color);
+}
+
+.web{
+    width: 90%;
+}
+
+.ui{
+    width: 40%;
+}
+
+.text-2{
+    width: 40%;
+}
+
+.flex{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
