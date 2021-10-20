@@ -17,7 +17,10 @@
     src: url(../fonts/Rubik/static/Rubik-Regular.ttf);
 }
 
-html,
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -25,6 +28,8 @@ body{
     line-height: 1.4;
     font-family: rubik;
     color: var(--main-txt-color);
+    background: var(--main-bg-color);
+    
 }
 
 header{
@@ -43,7 +48,7 @@ header .header-brand{
     font-size: 24px;
     font-weight: 900;
     color: #111;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     display: block;
     padding: 25px 10px;
     text-decoration: none;
@@ -52,14 +57,13 @@ header .header-brand{
 header nav  {
     position: absolute;
     top: 0;
-    left: 0;
-    padding: 0px 200px;
+    left: 18%;
 
 }
 
 header nav ul li {
     display: inline-block;
-    padding: 0 16px;
+    padding: 0 0px;
     list-style: none;
 }
 
@@ -114,18 +118,40 @@ header nav ul li a:hover{
     color: red;
 }
 
+/* drop down */
+
+.drop-down-content{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.drop-down-content a{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-bg-color);
+    color: black;
+    padding: 0px 30px;
+    border-bottom: 1px solid gray;
+    text-transform: capitalize;
+}
+
+.drop-down-1:hover  > .drop-down-content{
+    display: block;
+}
 
 .index-banner{
     width: 100%;
-    height:calc(100vh - 100px);
+    height:calc(80vh - 100px);
     background-image: url(../image/hero.bg.jpg);
     background-blend-mode: overlay;
-    background-color: gainsboro;
+    background-color: rgb(48, 35, 35);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     
 }
+
 
 .vertical-center{
     display: flex;
@@ -166,13 +192,14 @@ main{
 h1{
     text-align: center;
     text-transform: capitalize;
+    font-size: 35px;
 }
 
 /* about section */
 
 .about-section{
     width: 100%;
-    padding: 20px 0px;
+    padding: 60px 0px;
     background: var(--secondary-bg-color);
 }
 
@@ -229,6 +256,9 @@ h1{
 
 /* SERVICE CONTENT */
 
+#index-service-section-container{
+    padding-top: 80px;
+}
 
 .index-service-items{
     display: flex;
@@ -378,3 +408,83 @@ i{
     display: grid;
     grid-template-columns: 50% 50%;
 }
+
+
+
+ /* Right column */
+ .rightcolumn {
+    float: left;
+    padding-left: 20px;
+  }
+
+  .row{
+      display: grid;
+      grid-template-columns: 75% 25%;
+      gap: 10px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: var(--secondary-bg-color);
+    width: 100%;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--main-bg-color);
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  } */
+
+  /* index-contact-content-text-xl-content */
+
+  #index-contact-content-text-xl-content{
+      display: flex;
+      justify-content: space-evenly;
+      gap: 20px;
+  }
+
+  .index-contact-content-text-xl-item1{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 40px;
+
+  }
+
+  .index-contact-input-content{
+      display: flex;
+      gap: 20px;
+  }
+
+  .index-contact-input-content > input{
+      background: transparent;
+      outline: none;
+      padding: 12px 20px;
+  }
+
+  #index-contact-textarea-xl{
+      width: 100%;
+      margin-top: 20px;
+  }
+
+  textarea{
+      background: transparent;
+      outline: none;
+      border: 1px solid gray;
+  }
