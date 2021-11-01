@@ -26,7 +26,7 @@ body{
     padding: 0;
     margin: 0;
     font-size: 15px;
-    line-height: 1.4;
+    line-height: 1.7;
     font-family: rubik;
     color: var(--main-txt-color);
     background: var(--main-bg-color);
@@ -132,7 +132,7 @@ header nav ul li a:hover{
     color: var(--main-txt-color);
     padding: 0px 30px;
     border-bottom: 1px solid gray;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .drop-down-content a:hover{
@@ -329,6 +329,24 @@ h1{
     padding: 80px 10px;
 }
 
+#index-service-section-container-sub-text-text-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+#index-service-section-container-sub-text-text-description h3{
+    color: var(--secondary-text-color);
+    text-transform: uppercase;
+}
+
+#index-service-section-container-sub-text-text-description p{
+    width: 50%;
+    text-align: center;
+}
+
 .index-service-items{
     display: flex;
     justify-content: center;
@@ -490,11 +508,11 @@ h1{
     font-style: italic;
     margin: 0 15px 15px 15px;
     padding: 20px;
-    /* background: #fff; */
+    background: var(--main-bg-color);
     position: relative;
     margin-bottom: 35px;
     border-radius: 6px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 1px 8px 2px white;
   }
     .testimonial-item p::after {
     content: "";
@@ -506,6 +524,10 @@ h1{
     position: absolute;
     bottom: -20px;
     left: calc(50% - 20px);
+  }
+
+  .section-title h2{
+      color: var(--secondary-text-color);
   }
 
 /* skill content page */
@@ -565,6 +587,42 @@ h1{
   align-items: center;
     justify-content: center;
     grid-template-columns: 50% 40%;
+}
+
+
+/* ispiration page */
+.index-content-inspiration-container{
+    padding: 80px 20px;
+}
+
+
+.index-inspiration-dribble-wix-content{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.index-inspiration-dribble-wix-content > div{
+    border: 1px solid gray;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+}
+
+.index-inspiration-wireframe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.index-inspiration-wireframe > div{
+    border: 1px solid gray;
+    width: 600px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
 }
 
 
@@ -756,11 +814,22 @@ h1{
 }
 
 .index-contact-content-1-text-xl-item1-items i{
-    padding: 10px 6px;
+    padding: 10px 10px;
     border: 1px solid var(--secondary-text-color);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    transition: background .25s ease-in;
+    -webkit-transition: background .25s ease-in;
+    -moz-transition: background .25s ease-in;
+    -ms-transition: background .25s ease-in;
+    -o-transition: background .25s ease-in;
 }
+
+.index-contact-content-1-text-xl-item1-items i:hover{
+    background: gray;
+}
+
+
